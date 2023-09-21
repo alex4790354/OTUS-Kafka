@@ -7,9 +7,9 @@ public class CustomCallback implements Callback {
 
     public void onCompletion(RecordMetadata recordMetadata, Exception e) {
         if (e != null) {
-            TODO
+            e.printStackTrace();
         } else {
-            TODO
+            System.out.println("Message sent: " + recordMetadata.offset());
         }
     }
 }
